@@ -13,15 +13,11 @@ class Onborading extends StatefulWidget {
 class _OnboradingState extends State<Onborading> {
   final list = [
     Data(
-        image: 'assets/Frame.png',
-        text: 'Browse the menu and order directly from the applciation'),
+        image: 'assets/Frame.png', text: 'Browse the menu and order directly from the applciation'),
     Data(
         image: 'assets/Frame-1.png',
-        text:
-            'Your order will be immediately collected an sent by our couriern'),
-    Data(
-        image: 'assets/Group10.png',
-        text: 'Pick up delivery at your door and enjoy your food')
+        text: 'Your order will be immediately collected an sent by our couriern'),
+    Data(image: 'assets/Group10.png', text: 'Pick up delivery at your door and enjoy your food')
   ];
   final pageController = PageController();
   @override
@@ -34,6 +30,7 @@ class _OnboradingState extends State<Onborading> {
             SvgPicture.asset(
               'assets/Group7.svg',
               fit: BoxFit.cover,
+              width: MediaQuery.widthOf(context),
             ),
             PageView.builder(
               controller: pageController,
@@ -46,8 +43,7 @@ class _OnboradingState extends State<Onborading> {
                     InkWell(
                       onTap: () {
                         pageController.animateToPage(list.length - 1,
-                            duration: const Duration(milliseconds: 5000),
-                            curve: Curves.ease);
+                            duration: const Duration(milliseconds: 5000), curve: Curves.ease);
                       },
                       child: const Row(
                         mainAxisAlignment: MainAxisAlignment.end,
@@ -61,14 +57,12 @@ class _OnboradingState extends State<Onborading> {
                     Text(
                       list[index].text,
                       textAlign: TextAlign.center,
-                      style: const TextStyle(
-                          fontWeight: FontWeight.bold, fontSize: 25),
+                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
                     ),
                     InkWell(
                       onTap: () {
                         pageController.nextPage(
-                            duration: const Duration(milliseconds: 350),
-                            curve: Curves.ease);
+                            duration: const Duration(milliseconds: 350), curve: Curves.ease);
                       },
                       child: Stack(
                         alignment: Alignment.center,

@@ -8,14 +8,15 @@ Welcome to **OnBoarding**,training project. This course is designed to help you 
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-  - [Initialization and Onboarding](https://t.me/Omar_k_flutter)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [Contact](#contact)
+- [OnBoarding](#onboarding)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Installation](#installation)
+    - [Prerequisites](#prerequisites)
+  - [ScreenShots](#screenshots)
+  - [Contributing](#contributing)
+  - [Contact](#contact)
 
 ## Introduction
 
@@ -36,8 +37,12 @@ To get a local copy up and running, follow these simple steps.
 - Dart SDK (comes with Flutter)
 - Android Studio or Visual Studio Code
 
-
-### Clone the Repository
+## ScreenShots
+<p align="justify">
+  <img src="screenshots/1.png" alt="Search Screen" width="45%" />
+  <img src="screenshots/2.png" alt="Wishlist Screen" width="45%" />
+  <img src="screenshots/3.png" alt="Wishlist Screen" width="45%" />
+</p>### Clone the Repository
 
 ```bash
 git clone https://github.com/dev-OmarKaialy/on_Boarding.git
